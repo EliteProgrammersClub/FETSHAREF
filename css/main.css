@@ -18,7 +18,6 @@
 		padding: 0;
 		margin: 0;	
 		width: 100%;
-		background-image: url("http://girlswhocode.com/wp-content/uploads/2013/03/sip.jpg");
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-attachment: fixed;
@@ -27,10 +26,28 @@
 		}
 		
 	.overlay { 
-		background-color: rgba(0,0,0,0.5);
+		background-image: url("http://girlswhocode.com/wp-content/uploads/2013/03/sip.jpg");
 		width: 100%; 
-		height: 100VH;
+		height: 100%;
+		top: 0px;
+		left: 0px;
 		overflow: hidden !important;
+		position: fixed;
+		-webkit-filter: blur(5px);
+  		-moz-filter: blur(5px);
+  		-o-filter: blur(5px);
+  		-ms-filter: blur(5px);
+  		filter: blur(5px);
+  		z-index: -10;
+	}
+	.overall {
+		background-color: rgba(0,0,0,0.7);
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -2;
 		}
 	.content {
 		width: 100%; 		
@@ -52,7 +69,7 @@
 		color: #fff;
 		}
 	.start {
-		position: relative;
+		position: calc(100% - 50%);
 		text-align: center;
 		width: 200px;
 		height: 50px;
@@ -60,6 +77,7 @@
 		border: 2px solid #4fa3e2;
 		margin-top: 60px;
 		transform: translate(250%, 0);
+		transition: 0.5s ease-in-out;
 		}
 	.start p {
 		text-align: center;
@@ -72,6 +90,5 @@
 		cursor: pointer;
 		background-color: #fff;
 		color: #000;
-		transition: 0.5s ease-in-out !important;
 		border: 2px solid #fff;
 		}
