@@ -1,0 +1,94 @@
+/*  Author: Collins Geek
+ * copyright: (c) 2015	
+ * License: Mozilla Public License v 2.0
+ * Email: Collins.geek@gmail.com
+*/	
+	
+	html, *:before, *:after {
+		box-sizing: content-box;
+		margin: 0;
+		padding: 0;
+		}
+		
+	.container {
+		font-family: "poiret one", Trebuchet-MS, sans-serif;
+		background-color: #eee;
+		color: #000;
+		font-size: 100%;
+		padding: 0;
+		margin: 0;	
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		background-size: cover;
+		-moz-filter: blur(5px);
+		}
+		
+	.overlay { 
+		background-image: url("http://girlswhocode.com/wp-content/uploads/2013/03/sip.jpg");
+		width: 100%; 
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		overflow: hidden !important;
+		position: fixed;
+		-webkit-filter: blur(5px);
+  		-moz-filter: blur(5px);
+  		-o-filter: blur(5px);
+  		-ms-filter: blur(5px);
+  		filter: blur(5px);
+  		z-index: -10;
+	}
+	.overall {
+		background-color: rgba(0,0,0,0.7);
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -2;
+		}
+	.content {
+		width: 100%; 		
+		position: relative;
+		 }
+	.content h1 {
+		text-align: center;
+		font-size: 100px;
+		margin-top: 200px;
+		margin-bottom: 0;
+		font-weight: 200;
+		color: #fff;
+		}
+	.content h2 {
+		text-align: center;
+		font-size: 25px;
+		font-weight: 200;
+		margin-top: 0;
+		color: #fff;
+		}
+	.start {
+		position: calc(100% - 50%);
+		text-align: center;
+		width: 200px;
+		height: 50px;
+		color: #47a3da;
+		border: 2px solid #4fa3e2;
+		margin-top: 60px;
+		transform: translate(250%, 0);
+		transition: 0.5s ease-in-out;
+		}
+	.start p {
+		text-align: center;
+		vertical-align: middle;
+		font-family: ubuntu;
+		font-weight: 100;
+		font-size: 18px;
+		}
+	.start:hover {
+		cursor: pointer;
+		background-color: #fff;
+		color: #000;
+		border: 2px solid #fff;
+		}
